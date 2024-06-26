@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+}
+
+pre{
+	
+	font-size: 14px;
+	font-stretch: expanded;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.polynomial {
+    margin-top: 8px;
+    font-style: italic;
+    color: #555;
+}
+
+#result, #steps {
+    margin-top: 20px;
+}
+
+#result {
+    display: none;
+}
+
+#calculation-steps {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: left;
+    white-space: pre-wrap;
+}
+.fill{
+	font-weight: bold; 
+	color: blue;
+}
+
+.light{
+	
+	color: gray;
+}

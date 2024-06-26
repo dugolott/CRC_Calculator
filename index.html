@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRC Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CRC Calculator</h1>
+        <form id="crc-form">
+            <div class="input-group">
+                <label for="message">Codice binario del messaggio:</label>
+                 P(x) = <input type="text" id="message" name="message" required>
+                <p class="polynomial" id="message-polynomial"></p>
+            </div>
+
+            <div class="input-group">
+                <label for="generator">Polinomio generatore:</label>
+                G(x) = <input type="text" id="generator" name="generator" required>
+                <p class="polynomial" id="generator-polynomial"></p>
+            </div>
+        </form>
+        <div id="result">
+            <h2>Risultato:</h2>
+            <p>Quoziente: <span id="quotient"></span></p>
+            <p>Resto:     <span id="remainder"></span></p>
+			<p>Messaggio da inviare: <span id="final-message"></span></p>
+        </div>
+        <div id="steps">
+			
+            <h2>Passaggi del calcolo:</h2>
+			<div>
+				<button id="prev-step">&#9194;</button>
+				<button id="next-step">&#9193;</button>
+			</div>
+            <pre id="calculation-steps">
+			
+			</pre>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
